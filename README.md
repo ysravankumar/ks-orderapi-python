@@ -14,9 +14,9 @@ Python 2.7 and 3.4+
 If the python package is hosted on a repository, you can install directly using:
 
 ```sh
-pip install git+https://github.com/osparamatrix/ks-orderapi-python.git
+pip install git+https://github.com/ysravankumar/ks-orderapi-python.git
 ```
-(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/osparamatrix/ks-orderapi-python.git`)
+(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/ysravankumar/ks-orderapi-python.git`)
 
 Then import the package:
 ```python
@@ -46,7 +46,7 @@ from ks_api_client import ks_api
 # Defining the host is optional and defaults to https://tradeapi.kotaksecurities.com/apim
 # See configuration.py for a list of all supported configuration parameters.
 client = ks_api.KSTradeApi(access_token = "", userid = "", \
-                consumer_key = "", ip = "127.0.0.1", app_id = "")
+                consumer_key = "", ip = "127.0.0.1", app_id = "", session_token = "")
 
 #For using sandbox environment use host as https://sbx.kotaksecurities.com/apim
 client = ks_api.KSTradeApi(access_token = "", userid = "", \
